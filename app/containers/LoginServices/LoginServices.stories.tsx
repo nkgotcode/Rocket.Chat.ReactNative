@@ -8,7 +8,7 @@ import ServicesSeparator from './ServicesSeparator';
 import ButtonService from './ButtonService';
 import { type IServices } from '../../selectors/login';
 import { type TIconsName } from '../CustomIcon';
-import ServiceListTest from './ServiceList';
+import ServiceList from './ServiceList';
 
 const styles = StyleSheet.create({
 	serviceName: {
@@ -72,7 +72,7 @@ export const Separators = () => (
 	</>
 );
 
-export const ServiceList = () => (
+export const ServicesList = () => (
 	<>
 		{Object.values(services).map(service => {
 			const icon = `${service.name}-monochromatic` as TIconsName;
@@ -98,7 +98,7 @@ export const ServiceList = () => (
 
 export const ServiceListCollapsed = () => {
 	return (
-		<ServiceListTest
+		<ServiceList
 			services={services}
 			CAS_enabled={false}
 			CAS_login_url=''
@@ -112,7 +112,7 @@ export const ServiceListCollapsed = () => {
 
 export const ServiceListUncollapsed = () => {
 	return (
-		<ServiceListTest
+		<ServiceList
 			services={services}
 			CAS_enabled={false}
 			CAS_login_url=''
