@@ -67,8 +67,8 @@ export default {
 
 export const Separators = () => (
 	<>
-		<ServicesSeparator collapsed onPress={() => {}} separator services={services} />
-		<ServicesSeparator collapsed={false} onPress={() => {}} separator services={services} />
+		<ServicesSeparator collapsed onPress={() => {}} separator totalServices={4} />
+		<ServicesSeparator collapsed={false} onPress={() => {}} separator totalServices={4} />
 	</>
 );
 
