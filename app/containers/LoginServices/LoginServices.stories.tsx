@@ -96,7 +96,7 @@ export const ServiceList = () => (
 	</>
 );
 
-export const ServciceListCollapsed = () => {
+export const ServiceListCollapsed = () => {
 	return (
 		<ServiceListTest
 			services={services}
@@ -110,7 +110,7 @@ export const ServciceListCollapsed = () => {
 	);
 };
 
-export const ServciceListUncollapsed = () => {
+export const ServiceListUncollapsed = () => {
 	return (
 		<ServiceListTest
 			services={services}
